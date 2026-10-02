@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shivaselvam S — AI Engineer</title>
+  <meta name="description" content="Shivaselvam S — builds LLM applications end to end: voice agents, tool-calling, structured output, and live AI products." />
+  <meta property="og:title" content="Shivaselvam S — AI Engineer" />
+  <meta property="og:description" content="Voice agents, LLM tool-calling, structured-output pipelines and live AI products." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#07080d" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%2300e5ff'/><stop offset='1' stop-color='%23a855f7'/></linearGradient></defs><rect width='100' height='100' rx='24' fill='%2307080d'/><text x='50' y='66' font-family='Arial' font-weight='900' font-size='46' text-anchor='middle' fill='url(%23g)'>SS</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <span class="loader-logo">SS</span>
+      <div class="loader-bar"><span></span></div>
+      <span class="loader-text mono">booting portfolio<span class="dots"></span></span>
+    </div>
+  </div>
+
+  <div class="progress" id="progress"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <!-- Nav -->
+  <header class="nav" id="nav">
+    <a href="#home" class="logo magnetic" aria-label="Home">SS<span>.</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about" data-i="01">About</a>
+      <a href="#skills" data-i="02">Skills</a>
+      <a href="#projects" data-i="03">Projects</a>
+      <a href="#journey" data-i="04">Journey</a>
+      <a href="#contact" data-i="05">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn magnetic" id="themeToggle" aria-label="Toggle theme">
+        <svg class="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <a href="assets/Shivaselvam_S_Resume.pdf" class="btn btn-sm magnetic" download>Resume</a>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <canvas id="particles" aria-hidden="true"></canvas>
+      <div class="blob b1"></div><div class="blob b2"></div>
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow mono reveal"><span class="pulse-dot"></span> Open to 2027 new-grad roles &amp; internships</p>
+          <h1 class="hero-title">
+            <span class="line"><span class="split">Hi, I'm</span></span>
+            <span class="line"><span class="split grad">Shivaselvam</span></span>
+          </h1>
+          <p class="hero-role mono">&gt; <span id="typed"></span><span class="caret">_</span></p>
+          <p class="hero-sub reveal">I build LLM applications end to end — voice agents that call real tools, AI layers for live products, and pipelines that force models into strict, honest output.</p>
+          <div class="hero-cta reveal">
+            <a href="#projects" class="btn magnetic"><span>See my work</span>
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a href="#contact" class="btn btn-ghost magnetic"><span>Let's talk</span></a>
+          </div>
+          <div class="hero-social reveal">
+            <a href="https://github.com/SHIVSSV1269" target="_blank" rel="noopener" class="magnetic" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg></a>
+            <a href="https://www.linkedin.com/in/shivaselvam-s-178a333a7" target="_blank" rel="noopener" class="magnetic" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM7.1 20.5H3.5V9h3.6v11.5zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z"/></svg></a>
+            <a href="mailto:shivaselvamssv@gmail.com" class="magnetic" aria-label="Email"><svg viewBox="0 0 24 24" class="stroke"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m3 6 9 7 9-7"/></svg></a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="photo-wrap tilt" data-tilt>
+            <div class="photo-ring"></div>
+            <div class="photo">
+              <img src="assets/photo.jpg" alt="Shivaselvam S" width="900" height="900" />
+            </div>
+            <div class="chip chip-1 mono"><span>🎙️</span> Voice agents</div>
+            <div class="chip chip-2 mono"><span>⚡</span> 0.6s to first audio</div>
+            <div class="chip chip-3 mono"><span>🤖</span> LLM tool-calling</div>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Gemini Live API</span><i>✦</i><span>Python</span><i>✦</i><span>TypeScript</span><i>✦</i><span>Tool Calling</span><i>✦</i><span>Ollama</span><i>✦</i><span>Whisper</span><i>✦</i><span>Next.js</span><i>✦</i><span>Supabase</span><i>✦</i><span>n8n</span><i>✦</i><span>Selenium</span><i>✦</i><span>Docker</span><i>✦</i><span>ONNX Runtime</span><i>✦</i>
+        <span>Gemini Live API</span><i>✦</i><span>Python</span><i>✦</i><span>TypeScript</span><i>✦</i><span>Tool Calling</span><i>✦</i><span>Ollama</span><i>✦</i><span>Whisper</span><i>✦</i><span>Next.js</span><i>✦</i><span>Supabase</span><i>✦</i><span>n8n</span><i>✦</i><span>Selenium</span><i>✦</i><span>Docker</span><i>✦</i><span>ONNX Runtime</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="mono num">01.</span> About me</h2>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>I'm a <strong>Computer Science &amp; Business Systems</strong> undergrad at <strong>Panimalar Engineering College, Chennai</strong>, graduating in <strong>2027</strong>. I go by <span class="grad-text">Defiance</span> online — <em>defying the current ways</em>.</p>
+            <p>What I love is taking an AI idea all the way to something that actually runs: a voice assistant that hears its wake word and acts on my laptop, a Discord product with 94 commands and a real token budget, a live data site that scores trends every hour. I put the guardrails <em>outside</em> the model, measure every millisecond, and never let a pipeline guess when it should say "I don't know".</p>
+            <p>Off the clock, I'm building a Unity football game, tinkering with ComfyUI anime-art pipelines on a 4&nbsp;GB GPU, and automating everything from my phone to my laptop.</p>
+            <div class="about-meta mono">
+              <div><span>📍</span> Tiruppur / Chennai, Tamil Nadu</div>
+              <div><span>🎓</span> B.Tech CSBS · CGPA 7.92</div>
+              <div><span>🗣️</span> English · Tamil · Japanese (elementary)</div>
+            </div>
+          </div>
+          <div class="stats">
+            <div class="stat tilt reveal" data-tilt><b class="count" data-to="94">0</b><span>Discord commands powered by my AI layer</span></div>
+            <div class="stat tilt reveal" data-tilt><b><span class="count" data-to="0.6" data-dec="1">0</span>s</b><span>speech-to-first-audio, down from 4.5s</span></div>
+            <div class="stat tilt reveal" data-tilt><b><span class="count" data-to="6">0</span>/6</b><span>tests self-healed after every locator renamed</span></div>
+            <div class="stat tilt reveal" data-tilt><b class="count" data-to="15">0</b><span>CI test suites, every network call faked</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="mono num">02.</span> What I work with</h2>
+        <div class="skills-grid">
+          <article class="skill-card reveal spotlight">
+            <div class="skill-icon">🧠</div>
+            <h3>Generative AI</h3>
+            <p>Agents with tool calling &amp; confirmation gates, structured output with JSON Schema, per-task model routing, web-grounded answers, token budgeting.</p>
+            <div class="tags"><span>Gemini Live</span><span>Function calling</span><span>Ollama · Qwen2.5</span><span>Groq</span><span>SearXNG</span></div>
+          </article>
+          <article class="skill-card reveal spotlight">
+            <div class="skill-icon">🎙️</div>
+            <h3>Voice &amp; Multimodal</h3>
+            <p>Streaming speech pipelines, wake-word models, speculative STT, sentence-streamed TTS and hand-gesture control from a webcam.</p>
+            <div class="tags"><span>faster-whisper</span><span>Piper TTS</span><span>ONNX Runtime</span><span>WebSockets</span><span>ComfyUI</span></div>
+          </article>
+          <article class="skill-card reveal spotlight">
+            <div class="skill-icon">💻</div>
+            <h3>Languages</h3>
+            <p>Python for AI and automation, TypeScript for products, Java for test frameworks.</p>
+            <div class="tags"><span>Python</span><span>TypeScript</span><span>JavaScript</span><span>Java</span><span>C / C++</span><span>Bash</span></div>
+          </article>
+          <article class="skill-card reveal spotlight">
+            <div class="skill-icon">☁️</div>
+            <h3>Cloud &amp; Platform</h3>
+            <p>Shipping live products with auth, databases, CI gates and containers.</p>
+            <div class="tags"><span>Next.js</span><span>Supabase</span><span>Netlify</span><span>Docker</span><span>GitHub Actions</span><span>Linux</span></div>
+          </article>
+          <article class="skill-card reveal spotlight">
+            <div class="skill-icon">📊</div>
+            <h3>Data &amp; ML</h3>
+            <p>Choosing models on the right metric, not the flattering one — ROC-AUC over accuracy on imbalanced data.</p>
+            <div class="tags"><span>Pandas</span><span>scikit-learn</span><span>Jupyter</span><span>Classification</span></div>
+          </article>
+          <article class="skill-card reveal spotlight">
+            <div class="skill-icon">⚙️</div>
+            <h3>Automation &amp; QA</h3>
+            <p>Workflow automation, self-healing UI tests, and Android/desktop automation over ADB.</p>
+            <div class="tags"><span>n8n</span><span>Selenium</span><span>TestNG</span><span>Maven</span><span>Allure</span><span>ADB</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="mono num">03.</span> Things I've built</h2>
+        <div class="filters reveal" role="tablist">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="ai">AI / LLM</button>
+          <button class="filter" data-filter="web">Web</button>
+          <button class="filter" data-filter="ml">ML / Data</button>
+          <button class="filter" data-filter="auto">Automation</button>
+        </div>
+
+        <div class="projects">
+          <article class="project featured reveal tilt spotlight" data-cat="ai" data-tilt>
+            <div class="project-top"><span class="mono badge">Featured · 2026</span><span class="mono lock">🔒 private · demo on request</span></div>
+            <div class="orb" aria-hidden="true"><span></span><span></span><span></span></div>
+            <h3>Nexa — Voice AI Agent</h3>
+            <p>A voice assistant on the <b>Gemini Live API</b>. Mic audio streams through a WebSocket relay; every tool call is intercepted server-side so the key never touches the client. Safe tools run instantly, risky ones (typing, key presses, closing windows) wait for a <b>spoken "yes"</b>. A second, fully offline brain — Whisper, a local tool-calling LLM and Piper on a 4&nbsp;GB GPU — cut command latency from <b>4.5s → ~0.6s</b>.</p>
+            <div class="tags"><span>Python</span><span>Gemini Live</span><span>WebSockets</span><span>Ollama</span><span>faster-whisper</span><span>Piper</span><span>ONNX</span></div>
+          </article>
+
+          <article class="project featured reveal tilt spotlight" data-cat="ai" data-tilt>
+            <div class="project-top"><span class="mono badge">Featured · 2026</span><span class="mono lock">🔒 private · live product</span></div>
+            <h3>Xian Ni — AI Layer of a Discord Product</h3>
+            <p>The brain behind a <b>94-command</b> bot: a provider chain across Gemini and OpenAI-compatible APIs with per-task routing (quick, chat, reasoning, long-context, search). SearXNG-grounded answers that degrade gracefully, per-user hourly caps, a monthly token budget, and <b>15 CI test suites</b> faking every network call.</p>
+            <div class="tags"><span>TypeScript</span><span>Node.js</span><span>Gemini</span><span>Groq</span><span>SQLite</span><span>GitHub Actions</span></div>
+          </article>
+
+          <article class="project reveal tilt spotlight" data-cat="web" data-tilt>
+            <div class="project-top"><span class="mono badge live"><i></i>Live</span>
+              <a href="https://wildfirespreads.com" target="_blank" rel="noopener" class="ext" aria-label="Open Wildfire"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
+            <h3>Wildfire</h3>
+            <p>A live product with sign-in and watchlists that scores category demand every hour from daily Wikipedia readership — with rules that keep every number honest.</p>
+            <div class="tags"><span>Next.js</span><span>TypeScript</span><span>Supabase</span><span>Netlify</span></div>
+          </article>
+
+          <article class="project reveal tilt spotlight" data-cat="auto ai" data-tilt>
+            <div class="project-top"><span class="mono badge">Automation</span>
+              <a href="https://github.com/SHIVSSV1269/self-healing-selenium-framework" target="_blank" rel="noopener" class="ext" aria-label="GitHub repo"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
+            <h3>Self-Healing Selenium Framework</h3>
+            <p>Recovers from renamed locators through a tiered pipeline — heal cache, offline structural scoring, then an LLM. Passed <b>6/6</b> unmodified tests after every id and class was renamed. Every heal is bounded and audited.</p>
+            <div class="tags"><span>Java</span><span>Selenium</span><span>TestNG</span><span>Docker</span><span>Allure</span></div>
+          </article>
+
+          <article class="project reveal tilt spotlight" data-cat="auto ai" data-tilt>
+            <div class="project-top"><span class="mono badge">Automation</span>
+              <a href="https://github.com/SHIVSSV1269/n8n-workflows-for-Automation" target="_blank" rel="noopener" class="ext" aria-label="GitHub repo"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
+            <h3>AI Price Comparison Engine</h3>
+            <p>A 13-node n8n workflow fanning one request across five retailers, mapping messy pages into a strict JSON Schema, then ranking like-for-like variants and flagging suspicious pricing. Returns null rather than guessing.</p>
+            <div class="tags"><span>n8n</span><span>LLM API</span><span>JSON Schema</span><span>REST</span></div>
+          </article>
+
+          <article class="project reveal tilt spotlight" data-cat="ml" data-tilt>
+            <div class="project-top"><span class="mono badge">ML</span>
+              <a href="https://github.com/SHIVSSV1269/Customer-Churn-Prediction" target="_blank" rel="noopener" class="ext" aria-label="GitHub repo"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
+            <h3>Customer Churn Prediction</h3>
+            <p>IBM Telco dataset (7,043 records). Compared Logistic Regression, Decision Tree and Random Forest with 5-fold CV — picked on <b>ROC-AUC 0.842</b>, not accuracy, since ~73% don't churn.</p>
+            <div class="tags"><span>Python</span><span>scikit-learn</span><span>Pandas</span></div>
+          </article>
+
+          <article class="project reveal tilt spotlight" data-cat="ml ai" data-tilt>
+            <div class="project-top"><span class="mono badge">NLP</span>
+              <a href="https://github.com/SHIVSSV1269/review-trust-scorer" target="_blank" rel="noopener" class="ext" aria-label="GitHub repo"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
+            <h3>Review Trust Scorer</h3>
+            <p>NLP + graph-based analyzer that detects fake and manipulated e-commerce reviews.</p>
+            <div class="tags"><span>Python</span><span>NLP</span><span>Graphs</span></div>
+          </article>
+
+          <article class="project reveal tilt spotlight" data-cat="ml web" data-tilt>
+            <div class="project-top"><span class="mono badge">ML</span>
+              <a href="https://github.com/SHIVSSV1269/return-risk-engine" target="_blank" rel="noopener" class="ext" aria-label="GitHub repo"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
+            <h3>Return Risk Engine</h3>
+            <p>Predicts the probability an e-commerce order gets returned, with explainable output so the "why" is visible.</p>
+            <div class="tags"><span>JavaScript</span><span>Explainable AI</span></div>
+          </article>
+
+          <article class="project reveal tilt spotlight" data-cat="web ai" data-tilt>
+            <div class="project-top"><span class="mono badge">Web</span>
+              <a href="https://github.com/SHIVSSV1269/FARMLYTICS" target="_blank" rel="noopener" class="ext" aria-label="GitHub repo"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
+            <h3>Farmlytics</h3>
+            <p>A farmer-friendly app with quality-of-life features and a built-in AI assistant.</p>
+            <div class="tags"><span>TypeScript</span><span>AI Assistant</span></div>
+          </article>
+        </div>
+
+        <div class="more reveal">
+          <a href="https://github.com/SHIVSSV1269?tab=repositories" target="_blank" rel="noopener" class="btn btn-ghost magnetic"><span>More on GitHub</span><svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOURNEY -->
+    <section class="section" id="journey">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="mono num">04.</span> Journey</h2>
+        <div class="timeline">
+          <div class="tl-line"><span id="tlFill"></span></div>
+          <div class="tl-item reveal">
+            <span class="tl-dot"></span>
+            <span class="mono tl-date">Mar 2026</span>
+            <h3>Research paper presented — ICONIC 2K26</h3>
+            <p>"Guardian Mobile: A Content Filtering Framework Using SafeSearch and Parental Controls" at the International Conference on Intelligent Computing.</p>
+          </div>
+          <div class="tl-item reveal">
+            <span class="tl-dot"></span>
+            <span class="mono tl-date">Jul – Aug 2025</span>
+            <h3>AI &amp; Machine Learning Intern · InternPe</h3>
+            <p>Explored ML models and data-analysis tasks on real datasets with a team — preparation, implementation and testing.</p>
+          </div>
+          <div class="tl-item reveal">
+            <span class="tl-dot"></span>
+            <span class="mono tl-date">2025</span>
+            <h3>Certifications</h3>
+            <p>NPTEL (IIT Madras) Python for Data Science — <b>Elite</b> · NASSCOM FutureSkills Prime Data Science — <b>Gold</b> · 100 Days of Code (Udemy) · Full-Stack Web Dev (QSpiders) · AI &amp; ML workshop, IIT Madras.</p>
+          </div>
+          <div class="tl-item reveal">
+            <span class="tl-dot"></span>
+            <span class="mono tl-date">2023 – 2027</span>
+            <h3>B.Tech, Computer Science &amp; Business Systems</h3>
+            <p>Panimalar Engineering College, Chennai · CGPA 7.92 / 10</p>
+          </div>
+          <div class="tl-item reveal">
+            <span class="tl-dot"></span>
+            <span class="mono tl-date">2021 – 2023</span>
+            <h3>Vivekanandha Academy (CBSE)</h3>
+            <p>Class XII — 86% · Class X — 79.4%</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="mono num">05.</span> What's next?</h2>
+        <div class="contact-card reveal spotlight">
+          <h3 class="big">Let's build something <span class="grad-text">that actually ships.</span></h3>
+          <p>I'm looking for 2027 new-grad software / AI engineering roles and Jan–Jun 2027 internships. My inbox is always open.</p>
+          <div class="contact-actions">
+            <a href="mailto:shivaselvamssv@gmail.com" class="btn magnetic"><span>Say hello</span><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <button class="btn btn-ghost magnetic" id="copyEmail"><span class="mono">shivaselvamssv@gmail.com</span><svg viewBox="0 0 24 24"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button>
+          </div>
+          <div class="contact-links">
+            <a href="https://github.com/SHIVSSV1269" target="_blank" rel="noopener" class="magnetic">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/shivaselvam-s-178a333a7" target="_blank" rel="noopener" class="magnetic">LinkedIn ↗</a>
+            <a href="assets/Shivaselvam_S_Resume.pdf" download class="magnetic">Resume ↓</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="mono">Designed &amp; built by Shivaselvam S · <span id="year"></span></p>
+  </footer>
+
+  <button class="to-top magnetic" id="toTop" aria-label="Back to top"><svg viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+  <div class="toast mono" id="toast">Email copied ✓</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
